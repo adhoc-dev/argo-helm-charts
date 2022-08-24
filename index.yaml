@@ -3,6 +3,18 @@ entries:
   adhoc-defaultbackend:
   - apiVersion: v2
     appVersion: stable-alpine
+    created: "2022-08-24T14:35:39.33634972Z"
+    description: El "backend predeterminado" es un servicio que maneja todas las rutas
+      URL y aloja el controlador Ingress-NGINX que no comprende (es decir, todas las
+      solicitudes que no están asignadas con un Ingress).
+    digest: 52cddeb4e2b2f4e9d00cd182096b1a9ec4be857210ae1a9a16f4957a717b5680
+    name: adhoc-defaultbackend
+    type: application
+    urls:
+    - https://github.com/adhoc-dev/test-helm-charts/releases/download/adhoc-defaultbackend-0.2.1/adhoc-defaultbackend-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
+    appVersion: stable-alpine
     created: "2022-08-24T13:54:35.524504917Z"
     description: El "backend predeterminado" es un servicio que maneja todas las rutas
       URL y aloja el controlador Ingress-NGINX que no comprende (es decir, todas las
@@ -13,4 +25,4 @@ entries:
     urls:
     - https://github.com/adhoc-dev/test-helm-charts/releases/download/adhoc-defaultbackend-0.2.0/adhoc-defaultbackend-0.2.0.tgz
     version: 0.2.0
-generated: "2022-08-24T13:54:35.524518917Z"
+generated: "2022-08-24T14:35:39.33635812Z"
