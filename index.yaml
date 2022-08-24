@@ -61,4 +61,16 @@ entries:
     urls:
     - https://github.com/adhoc-dev/test-helm-charts/releases/download/adhoc-defaultbackend-0.2.0/adhoc-defaultbackend-0.2.0.tgz
     version: 0.2.0
-generated: "2022-08-24T16:08:17.452953716Z"
+  adhoc-redis:
+  - apiVersion: v2
+    appVersion: 6-alpine
+    created: "2022-08-24T16:24:06.94509649Z"
+    description: Redis for odoo sessions
+    digest: c33facc542df1fe82f990fb844d7a49c75df5b1e93638cb29c8c449561f03b9e
+    icon: https://github.com/adhoc-dev/helm-charts/raw/master/img/Redis_Logo.svg
+    name: adhoc-redis
+    type: application
+    urls:
+    - https://github.com/adhoc-dev/test-helm-charts/releases/download/adhoc-redis-0.1.1/adhoc-redis-0.1.1.tgz
+    version: 0.1.1
+generated: "2022-08-24T16:24:06.94510829Z"
