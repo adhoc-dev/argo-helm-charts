@@ -1,11 +1,9 @@
 name: Release Charts
 
-on: 
+on:
   push:
     branches:
       - main
-    paths:
-      - 'charts/**'
 
 jobs:
   release:
