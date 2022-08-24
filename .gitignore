@@ -3,6 +3,12 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+
+## argo-cd helm chart
+charts/argo-cd/charts/
+
+
+
 # User-specific files
 *.rsuser
 *.suo
