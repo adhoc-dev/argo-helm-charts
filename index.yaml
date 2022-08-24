@@ -73,4 +73,16 @@ entries:
     urls:
     - https://github.com/adhoc-dev/test-helm-charts/releases/download/adhoc-redis-0.1.1/adhoc-redis-0.1.1.tgz
     version: 0.1.1
-generated: "2022-08-24T16:24:06.94510829Z"
+  cert-cfg:
+  - apiVersion: v1
+    appVersion: 1.0.0
+    created: "2022-08-24T16:27:01.269548073Z"
+    description: A Helm chart for Kubernetes
+    digest: 481fc269f13bc060ad704dacc336b17cb7d3a528107d3c5bd1845de54f04fc72
+    icon: https://github.com/adhoc-dev/helm-charts/raw/master/img/kube-cert-manager-nginx-kubernetes.png
+    name: cert-cfg
+    type: application
+    urls:
+    - https://github.com/adhoc-dev/test-helm-charts/releases/download/cert-cfg-0.1.0/cert-cfg-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-08-24T16:27:01.269616374Z"
