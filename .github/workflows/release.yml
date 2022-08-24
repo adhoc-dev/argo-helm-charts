@@ -1,9 +1,13 @@
 name: Release Charts
 
-on:
+on: 
   push:
     branches:
       - main
+    paths:
+      - 'charts/**'
+  release:
+    types: [published, created]
 
 jobs:
   release:
@@ -22,4 +26,4 @@ jobs:
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.4.0
         env:
-          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          CR_TOKEN: "${{ secrets.CR_TOKEN }}"
