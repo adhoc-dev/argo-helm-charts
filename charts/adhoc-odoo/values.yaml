@@ -2,7 +2,7 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-replicaCount: {}
+replicaCount: 1
 
 image:
   repository: adhoc/odoo-adhoc
@@ -18,17 +18,17 @@ serviceAccount:
   # Specifies whether a service account should be created
   create: true
   # Annotations to add to the service account
-  annotations: {}
+  annotations:
   # The name of the service account to use.
   # If not set and create is true, a name is generated using the fullname template
   name: ""
 
-podAnnotations: {}
+podAnnotations:
 
-podSecurityContext: {}
+podSecurityContext:
   # fsGroup: 2000
 
-securityContext: {}
+securityContext:
   # capabilities:
   #   drop:
   #   - ALL
@@ -70,13 +70,13 @@ ingress:
   # True for Google Ingress or false for internal NGINX Ingress
   useGoogleCloudExternalLB: false
 
-resources:
-  limits:
-    cpu: {}
-    memory: {}
-  requests:
-    cpu: {}
-    memory: {}
+resources: {}
+#  limits:
+#    cpu:
+#    memory:
+#  requests:
+#    cpu:
+#    memory:
 
 autoscaling:
   enabled: false
@@ -85,8 +85,8 @@ autoscaling:
   targetCPUUtilizationPercentage: 80
   targetMemoryUtilizationPercentage: 90
 
-nodeSelector: {}
-tolerations: {}
+nodeSelector:
+tolerations:
 
 multiEnvVariables:
   # example: "yes"
