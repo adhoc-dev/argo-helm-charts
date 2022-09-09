@@ -64,6 +64,17 @@ entries:
   adhoc-odoo:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2022-09-09T22:31:36.771709732Z"
+    description: A Helm chart for Kubernetes
+    digest: d5ab3b6b7292899a66f4fffc01e63e8ccf843c7628e9873533655bd53c6b162d
+    icon: https://github.com/adhoc-dev/helm-charts/raw/master/img/Odoo_logo.svg
+    name: adhoc-odoo
+    type: application
+    urls:
+    - https://github.com/adhoc-dev/test-helm-charts/releases/download/adhoc-odoo-0.1.6/adhoc-odoo-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2022-09-09T22:08:28.351166642Z"
     description: A Helm chart for Kubernetes
     digest: 95a1b6627fa0c9078ae0d49134a18f6f2d7e6f1ff0df78c64fa54aec0c735cf5
@@ -130,4 +141,4 @@ entries:
     urls:
     - https://github.com/adhoc-dev/test-helm-charts/releases/download/cert-cfg-0.1.0/cert-cfg-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-09T22:08:28.351382145Z"
+generated: "2022-09-09T22:31:36.771755432Z"
