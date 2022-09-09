@@ -65,18 +65,18 @@ ingress:
   enableHttps: true
   # AltHost
   hosts: ""
-  cloudMainDomain: adhoc.ar
+  cloudMainDomain: dev-adhoc.com
 
   # True for Google Ingress or false for internal NGINX Ingress
   useGoogleCloudExternalLB: false
 
-resources: {}
-#  limits:
-#    cpu:
-#    memory:
-#  requests:
-#    cpu:
-#    memory:
+resources:
+  limits:
+    cpu: 3000m
+    memory: 4096Mi
+  requests:
+    cpu: 30m
+    memory: 250Mi
 
 autoscaling:
   enabled: false
@@ -95,32 +95,32 @@ multiEnvVariables:
 odoo:
   # Database parameters
   pg:
-    user: ""
+    user: "odoo"
     pass: ""
     host: "adhoc-pg.adhoc-pg.svc.cluster.local"
     port: 5432
-    db: "adhoc-pg"
+    db: "odoo"
   # Base Config
   basic:
     adminPass: "admin"
-    dbFilter: "false"
+    dbFilter: ".*"
     wideModules: "base,web,server_mode,saas_client"
     logLevel: "info"
 #    aerooHost: ""
-    emailFrom: "notifications@adhoc.nubeadhoc.com"
+    emailFrom: "notifications@adhoc.ar"
   # Performance Config
   saas:
     mode: false
   performance:
     workers: 0
     maxCronTh: 1
-    maxDbConn: 96
+    maxDbConn: 100
     dbTemplate: "template0"
     maxMemHard: "4777721600"
-    maxMemSoft: "3147484000"
-    maxTimeCpu: 3000
-    maxTimeReal: 1600
-    maxTimeCron: 6000
+    maxMemSoft: "671088640"
+    maxTimeCpu: 400
+    maxTimeReal: 800
+    maxTimeCron: 1600
     maxHttpTh: 8
     saasPath: "/home/odoo/src/repositories/ingadhoc-odoo-saas"
   entrypoint:
@@ -131,13 +131,13 @@ odoo:
     custom: ""
   # SMTP Config
   smtp:
-    host: ""
-    port: 0
+    host: "smtp.mailgun.org"
+    port: 25
     ssl: false
     user: ""
     pass: ""
-    catchall: ""
-    whiteList: "adhoc.nubeadhoc.com"
+    catchall: "example.com"
+    whiteList: "adhoc.ar"
 # Redis Config
 redis:
   enabled: false
