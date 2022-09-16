@@ -11,6 +11,8 @@ image:
   tag: "13.0.2022.09.09-enterprise"
   pullSecret: "regcred"
 
+dockerhubPullSecret: ""
+
 nameOverride: ""
 fullnameOverride: ""
 
